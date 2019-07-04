@@ -19,4 +19,21 @@
 
 .card-container {
   padding: 2px 16px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.card-image {
+  width: 80px;
+}
+
+.card-content {
+  width: 177px;
+}
+
+footer {
+  margin: 20px;
+  text-align: center;
 }
