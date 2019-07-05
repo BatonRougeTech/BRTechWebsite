@@ -1,16 +1,15 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "br-tech",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Website for BatonRouge.Tech",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/BatonRougeTech/BRTechWebsite/issues"
   },
   "dependencies": {
     "gatsby": "^2.13.2",
     "gatsby-image": "^2.2.4",
-    "gatsby-plugin-feed": "^2.3.2",
     "gatsby-plugin-google-analytics": "^2.1.1",
     "gatsby-plugin-manifest": "^2.2.1",
     "gatsby-plugin-offline": "^2.2.0",
@@ -33,8 +32,7 @@
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
-    "typography-theme-us-web-design-standards": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-us-web-design-standards": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
