@@ -1,7 +1,7 @@
 ---
 slug: brdnug
 name: .NET User Group
-next-meeting: "2019-07-10T17:45:00.000Z"
+next-meeting: "2019-07-10T17:45:00.000-05:00"
 icon: ../assets/brdnug.png
 group_url: https://www.brdnug.org/
 topics: [ microsoft, aspnet, agile, angular, dotnet, devops, javascript, mobile, reactjs, webdev, xamarin  ]

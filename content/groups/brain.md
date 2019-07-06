@@ -1,7 +1,7 @@
 ---
 slug: brain
 name: Analytics & Intelligence Network
-next-meeting: "2019-06-27T17:30:00.000Z"
+next-meeting: "2019-06-27T17:30:00.000-05:00"
 icon: ../assets/brain.png
 group_url: https://batonrougeanalytics.pass.org/
 topics: [ tableau, powerbi, analytics, businessintelligence ]
