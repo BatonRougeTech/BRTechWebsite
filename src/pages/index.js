@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import Bio from "../components/bio"
@@ -27,6 +27,7 @@ class BlogIndex extends React.Component {
         {userGroups.map(({ node }) => {
           const name = node.frontmatter.name
           return (
+            <Link to={node.frontmatter.slug}>
             <div key={node.frontmatter.slug} class="card">
               <div class="card-container">
                 <div class="card-image">
@@ -43,6 +44,7 @@ class BlogIndex extends React.Component {
                 </div>
               </div>              
             </div>
+            </Link>
           )
         })}
         </div>
