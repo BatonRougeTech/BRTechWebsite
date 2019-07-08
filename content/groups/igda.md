@@ -1,10 +1,10 @@
 ---
 slug: igda
 name: International Game Developers Association
-next-meeting:  "2019-08-07T17:00:00.000-05:00"
+next-meeting:  "2019-08-07T17:00:00.000Z"
 icon: ../assets/igda.jpg
 group_url: https://www.facebook.com/igdabr/
-topics: [ games, dev ]
+topics: [ games ]
 frequency: monthly
 ---
 

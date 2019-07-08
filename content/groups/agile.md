@@ -1,7 +1,7 @@
 ---
 slug: agile
 name: Geaux Agile
-next-meeting: "2019-07-31T18:00:00.000-05:00"
+next-meeting: "2019-07-31T18:00:00.000Z"
 icon: ../assets/agile.jpg
 group_url: http://www.geauxagile.com
 topics: [ agile ]

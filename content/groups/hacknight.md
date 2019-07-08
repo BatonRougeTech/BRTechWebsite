@@ -1,7 +1,7 @@
 ---
 slug: hacknight
 name: BRhack.night 
-next-meeting: "2019-07-31T18:00:00.000-05:00"
+next-meeting: "2019-07-31T18:00:00.000Z"
 icon: ../assets/brhacknight.jpg
 group_url: https://www.facebook.com/groups/brhacknight/
 topics: [ css, opensource, dev, html, web, javascript ]
