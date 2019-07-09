@@ -23,11 +23,11 @@ class BlogIndex extends React.Component {
         >
           <h2>Local User Groups</h2>
         </div>
-        <div class="container">          
+        <section class="container">          
         {userGroups.map(({ node }) => {
           const name = node.frontmatter.name
           return (
-            <Link to={node.frontmatter.slug}>
+            <Link to={node.frontmatter.slug} className="card-box">
             <div key={node.frontmatter.slug} class="card">
               <div class="card-container">
                 <div class="card-image">
@@ -35,7 +35,8 @@ class BlogIndex extends React.Component {
                 </div>
                 <div class="card-content">
                   <h4 style={{
-                    marginBottom: rhythm(1 / 4),                
+                    marginTop: `5px`,
+                    marginBottom: rhythm(1 / 10),                
                   }}
                   >
                     {name}
@@ -47,7 +48,10 @@ class BlogIndex extends React.Component {
             </Link>
           )
         })}
-        </div>
+        </section>        
+        <section className="contribute">
+          <a href="https://github.com/BatonRougeTech/BRTechWebsite" class="button">Add Your Group / Maintain this List</a>
+        </section>
       </Layout>
     )
   }

@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,6 +19,9 @@ class GroupPageTemplate extends React.Component {
           description={group.excerpt}
         />
         <div>
+          <div class="group-image">
+          <Image sizes={group.frontmatter.icon.childImageSharp.sizes}/>
+          </div>
           <h1
             style={{
               textAlign: `center`,
@@ -91,6 +95,13 @@ export const pageQuery = graphql`
         name
         next_meeting(formatString:"MMMM DD, YYYY @ hh:mm a")
         group_url
+        icon {
+          childImageSharp {
+            sizes(maxWidth: 216) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
         topics
         frequency
       }

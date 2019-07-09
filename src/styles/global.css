@@ -27,11 +27,39 @@
 
 .card-image {
   width: 80px;
-  padding:10px;
+  padding: 10px 10px 10px 0px;
 }
 
 .card-content {
   width: 177px;
+}
+
+a.card-box {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+section.contribute {
+  text-align: center;
+  margin: 40px 0px 40px 0px;
+}
+
+a.button {  
+  display: block;
+  padding: 20px 40px 20px 40px;
+  border-radius: 8px;
+  line-height: 1;
+  background-color: rgba(213,0,26,1.0);
+  color: rgba(255,255,255,1.0);
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+}
+
+.group-image {
+  width: 216px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
