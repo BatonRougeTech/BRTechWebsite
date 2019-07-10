@@ -3,8 +3,7 @@ slug: lagd
 name: Louisiana Game Developers
 icon: ../assets/lagd.png
 group_url: https://www.lagd.network/
-topics: [ gamedevelopment, games, interactive ]
-frequency: monthly
+topics: [gamedevelopment, games, interactive]
 ---
 
 Louisiana Game Developers is an organization dedicated to fostering and promoting the game development community in Louisiana.
