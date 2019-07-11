@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const userGroups = data.allMarkdownRemark.edges    
+    const userGroups = data.allMarkdownRemark.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -23,34 +23,34 @@ class BlogIndex extends React.Component {
         >
           <h2>Local User Groups</h2>
         </div>
-        <section class="container">          
+        <section className="container">
         {userGroups.map(({ node }) => {
           const name = node.frontmatter.name
           return (
             <Link to={node.frontmatter.slug} className="card-box">
-            <div key={node.frontmatter.slug} class="card">
-              <div class="card-container">
-                <div class="card-image">
-                  <Image sizes={node.frontmatter.icon.childImageSharp.sizes}/>
+              <div key={node.frontmatter.slug} className="card">
+                <div className="card-container">
+                  <div className="card-image">
+                    <Image sizes={node.frontmatter.icon.childImageSharp.sizes}/>
+                  </div>
+                  <div className="card-content">
+                    <h4 style={{
+                      marginTop: `5px`,
+                      marginBottom: rhythm(1 / 10),
+                    }}
+                    >
+                      {name}
+                    </h4>
+                    <small>{node.frontmatter.next_meeting}</small>
+                  </div>
                 </div>
-                <div class="card-content">
-                  <h4 style={{
-                    marginTop: `5px`,
-                    marginBottom: rhythm(1 / 10),                
-                  }}
-                  >
-                    {name}
-                  </h4>
-                  <small>{node.frontmatter.next_meeting}</small>
-                </div>
-              </div>              
-            </div>
+              </div>
             </Link>
           )
         })}
-        </section>        
+        </section>
         <section className="contribute">
-          <a href="https://github.com/BatonRougeTech/BRTechWebsite" class="button">Add Your Group / Maintain this List</a>
+          <a href="https://github.com/BatonRougeTech/BRTechWebsite" className="button">Add Your Group / Maintain this List</a>
         </section>
       </Layout>
     )
