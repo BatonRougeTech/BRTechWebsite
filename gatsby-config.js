@@ -52,7 +52,7 @@ module.exports = {
       options: {
         trackingId: `UA-143285702-1`,
       },
-    },    
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
@@ -61,5 +61,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-postcss`,
   ],
 }
