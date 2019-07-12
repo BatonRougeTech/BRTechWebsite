@@ -1,0 +1,11 @@
+a.button {
+  display: block;
+  padding: 20px 40px 20px 40px;
+  border-radius: 8px;
+  line-height: 1;
+  background-color: var(--color-brand-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-merriweather);
+  font-size: 1rem;
+}
