@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
           textAlign: `center`
         }}
         >
-          <h2>Local User Groups</h2>
+          <h2 className="cards__title">Local User Groups</h2>
         </div>
         <section class="cards">
         {userGroups.map(({ node }) => {
@@ -40,6 +40,7 @@ class BlogIndex extends React.Component {
                 >
                   {name}
                 </h4>
+                {/* TODO Q: convert to span and create type class to represent small tag */}
                 <small class="card__next-meeting">
                   {node.frontmatter.next_meeting}
                 </small>
