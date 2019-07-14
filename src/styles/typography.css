@@ -1,0 +1,36 @@
+/* TYPE SCALE */
+:root {
+  --type-scale-12: .75rem;
+  --type-scale-14: .875rem;
+  --type-scale-16: 1rem;
+  --type-scale-18: 1.125rem;
+  --type-scale-20: 1.25rem;
+  --type-scale-22: 1.375rem;
+  --type-scale-24: 1.5rem;
+  --type-scale-30: 1.875rem;
+  --type-scale-32: 2rem;
+}
+
+/* DISPLAY */
+.t-section-headline {
+  font-size: var(--type-scale-24);
+  line-height: 1.56;
+}
+
+/* BODY */
+.t-body {
+  font-size: var(--type-scele-18);
+  line-height: 1.44;
+}
+
+/* UTILITY */
+.t-hidden {
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0 0 99.9% 99.9%);
+  overflow: hidden;
+  border: 0;
+}

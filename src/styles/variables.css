@@ -1,0 +1,41 @@
+:root {
+  /* BASE COLORS */
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* BRAND COLORS */
+  --color-brand-primary: #58a4b0;
+  --color-brand-primary-alt: #417881;
+  --color-brand-secondary: #daa49a;
+
+  /* GRAYS */
+  --color-gray-1: #fcfcfc;
+  --color-gray-2: #adadad;
+  --color-gray-3: #999;
+  --color-gray-4: #4d4d4d;
+  --color-gray-5: #1b1b1b;
+
+  /* FONT FAMILY */
+  --font-merriweather: 'Merriweather',serif;
+  --font-source-sans: 'Source Sans Pro',sans-serif;
+
+  /* FONT WEIGHT */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* GLOBAL COMPONENT COLORS */
+  --color-g-component-shadow: 0 2px 14px 0 rgba(var(--color-gray-3), .27);
+  --color-g-component-shadow-focus: 0 4px 8px -6px rgba(0, 0, 0, .08), 0 0 11px 0 rgba(0, 0, 0, .06), 0 8px 12px -6px rgba(0, 0, 0, .10);
+
+  /* GLOBAL MEASUREMENTS */
+  --global-gutter: 16px;
+  --global-gutter-small: 8px;
+  --global-radius: 6px;
+  --global-radius-small: 2px;
+
+  /* GLOBAL TRANSITION */
+  --global-transition: .2s ease;
+}
