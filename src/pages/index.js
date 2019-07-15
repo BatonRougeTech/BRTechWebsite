@@ -23,15 +23,15 @@ class BlogIndex extends React.Component {
         >
           <h2 className="cards__title">Local User Groups</h2>
         </div>
-        <section class="cards">
+        <section className="cards">
         {userGroups.map(({ node }) => {
           const name = node.frontmatter.name
           return (
             <Link to={node.frontmatter.slug}  key={node.frontmatter.slug} className="card">
-              <div class="card-image">
+              <div className="card-image">
                 <Image className="card-image-image" sizes={node.frontmatter.icon.childImageSharp.sizes}/>
               </div>
-              <div class="card-content">
+              <div className="card-content">
                 <h4
                   className="card__title"
                   style={{
@@ -41,9 +41,9 @@ class BlogIndex extends React.Component {
                   {name}
                 </h4>
                 {/* TODO Q: convert to span and create type class to represent small tag */}
-                <small class="card__next-meeting">
+                <span className="t-caption card__next-meeting">
                   {node.frontmatter.next_meeting}
-                </small>
+                </span>
               </div>
             </Link>
           )

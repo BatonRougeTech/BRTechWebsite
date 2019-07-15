@@ -20,10 +20,14 @@
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
+  &:visited {
+    color: inherit;
+  }
 }
 
 .card-image {
-  width: 80px;
+  width: 76px;
   padding: 6px 10px 10px 0px;
   padding-right: 10px;
   align-self: flex-start;
