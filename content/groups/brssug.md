@@ -1,7 +1,7 @@
 ---
 slug: brssug
 name: SQL Server User Group
-next-meeting: "2019-07-10T17:45:00.000Z"
+next-meeting: "2019-08-17T17:45:00.000Z"
 icon: ../assets/brssug.png
 group_url: http://www.brssug.org/
 topics: [ mssql, microsoft, azure, businessintelligence ]
