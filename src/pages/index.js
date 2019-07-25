@@ -32,14 +32,14 @@ class BlogIndex extends React.Component {
                 <Image className="card-image-image" sizes={node.frontmatter.icon.childImageSharp.sizes}/>
               </div>
               <div className="card-content">
-                <h4
+                <h3
                   className="card__title"
                   style={{
                   marginBottom: rhythm(1 / 10),
                 }}
                 >
                   {name}
-                </h4>
+                </h3>
                 {/* TODO Q: convert to span and create type class to represent small tag */}
                 <span className="t-caption card__next-meeting">
                   {node.frontmatter.next_meeting}

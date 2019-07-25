@@ -6,6 +6,7 @@
 }
 
 .cards__title {
+  font-weight: var(--weight-bold);
 }
 
 .card {
