@@ -18,11 +18,12 @@ class GroupPageTemplate extends React.Component {
           title={group.frontmatter.name}
           description={group.excerpt}
         />
-        <div>
-          <div class="group-image">
-          <Image sizes={group.frontmatter.icon.childImageSharp.sizes}/>
+        <div className="group">
+          <div className="group__image">
+            <Image sizes={group.frontmatter.icon.childImageSharp.sizes}/>
           </div>
           <h1
+            className="group__name"
             style={{
               textAlign: `center`,
               marginTop: rhythm(1),
@@ -35,21 +36,19 @@ class GroupPageTemplate extends React.Component {
             marginTop: rhythm(1),
             marginBottom: rhythm(1),
             textAlign: `justify`
-          }} />
-          <p>
-            <strong>Meeting Frequency:</strong> {group.frontmatter.frequency}<br/>
-            <strong>Next Meeting:</strong> {group.frontmatter.next_meeting}<br/>            
-          </p>          
-          <p>
-            <a href={group.frontmatter.group_url} target="_blank" rel="noopener noreferrer">Visit Group Website</a>
-          </p>
-        </div>
-        <hr 
-          style={{
-            marginBottom: rhythm(1)          
           }}
-        />
+            class="group__copy"
+          />
+            <p>
+              <span class="t-bold">Meeting Frequency:</span> {group.frontmatter.frequency}<br/>
+              <span class="t-bold">Next Meeting:</span> {group.frontmatter.next_meeting}<br/>
+            </p>
+            <p>
+              <a class="t-link group__link" href={group.frontmatter.group_url} target="_blank" rel="noopener noreferrer">Visit Group Website</a>
+            </p>
+          </div>
         <ul
+          class="group__pagination"
           style={{
             display: `flex`,
             flexWrap: `wrap`,
@@ -70,12 +69,12 @@ class GroupPageTemplate extends React.Component {
               <Link to={next.frontmatter.slug} rel="next">
                 {next.frontmatter.name} →
               </Link>
-            )}            
+            )}
           </li>
         </ul>
       </Layout>
     )
-  }    
+  }
 }
 
 export default GroupPageTemplate

@@ -9,12 +9,26 @@
   --type-scale-24: 1.5rem;
   --type-scale-30: 1.875rem;
   --type-scale-32: 2rem;
+  --type-scale-48: 3rem;
 }
 
 /* DISPLAY */
+.t-display {
+  font-size: var(--type-scale-48);
+  line-height: 1.354;
+}
+
+/* HEADLINE */
 .t-section-headline {
   font-size: var(--type-scale-24);
   line-height: 1.56;
+}
+
+.t-page-title {
+  font-family: var(--font-montserrat);
+  font-size: var(--type-scale-20);
+  font-weight: var(--weight-bold);
+  line-height: 1.3;
 }
 
 /* BODY */
@@ -23,7 +37,25 @@
   line-height: 1.44;
 }
 
+/* LINK */
+.t-header-link {
+  font-family: var(--font-montserrat);
+  font-size: var(--type-scale-20);
+  font-weight: var(--weight-bold);
+  line-height: 1.3;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 /* UTILITY */
+.t-bold {
+  font-weight: var(--weight-bold);
+}
+
 .t-hidden {
   padding: 0;
   width: 1px;

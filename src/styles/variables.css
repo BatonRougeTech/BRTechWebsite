@@ -4,7 +4,7 @@
   --color-white: #fff;
 
   /* BRAND COLORS */
-  --color-brand-primary: #58a4b0;
+  --color-brand-primary: rgba(213,0,26,1.0);
   --color-brand-primary-alt: #417881;
   --color-brand-secondary: #daa49a;
 
@@ -14,9 +14,11 @@
   --color-gray-3: #999;
   --color-gray-4: #4d4d4d;
   --color-gray-5: #1b1b1b;
+  --color-gray-6: hsla(0,0%,0%,0.2);
 
   /* FONT FAMILY */
   --font-merriweather: 'Merriweather',serif;
+  --font-montserrat: 'Montserrat', sans-serif;
   --font-source-sans: 'Source Sans Pro',sans-serif;
 
   /* FONT WEIGHT */

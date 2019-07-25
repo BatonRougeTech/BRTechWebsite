@@ -12,6 +12,7 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = (
         <h1
+          className="t-display header__display"
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
@@ -32,23 +33,16 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
+        <Link
+          className="t-header-link header__page-title"
           style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
+            boxShadow: `none`,
+            color: `inherit`,
           }}
+          to={`/`}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
+          {title}
+        </Link>
       )
     }
     return (
@@ -61,15 +55,17 @@ class Layout extends React.Component {
         }}
       >
         <header
-          style={{
-            textAlign: `center`
-          }}
-        >{header}</header>
-        <main>{children}</main>
-        <footer>
-          © BatonRouge.tech {new Date().getFullYear()}, Built with
+          className="l-header"
+        >
+          {header}
+        </header>
+        <main className="l-main">
+          {children}
+        </main>
+        <footer className="l-footer">
+          &copy; BatonRouge.tech {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
         </footer>
       </div>
     )
