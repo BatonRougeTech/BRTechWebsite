@@ -51,6 +51,11 @@
   }
 }
 
+.t-caption {
+  font-size: var(--type-scale-14);
+  line-height: 1.53;
+}
+
 /* UTILITY */
 .t-bold {
   font-weight: var(--weight-bold);

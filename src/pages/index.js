@@ -21,29 +21,29 @@ class BlogIndex extends React.Component {
           textAlign: `center`
         }}
         >
-          <h2>Local User Groups</h2>
+          <h2 className="cards__title">Local User Groups</h2>
         </div>
-        <section className="container">
+        <section className="cards">
         {userGroups.map(({ node }) => {
           const name = node.frontmatter.name
           return (
-            <Link to={node.frontmatter.slug} className="card-box">
-              <div key={node.frontmatter.slug} className="card">
-                <div className="card-container">
-                  <div className="card-image">
-                    <Image sizes={node.frontmatter.icon.childImageSharp.sizes}/>
-                  </div>
-                  <div className="card-content">
-                    <h4 style={{
-                      marginTop: `5px`,
-                      marginBottom: rhythm(1 / 10),
-                    }}
-                    >
-                      {name}
-                    </h4>
-                    <small>{node.frontmatter.next_meeting}</small>
-                  </div>
-                </div>
+            <Link to={node.frontmatter.slug}  key={node.frontmatter.slug} className="card">
+              <div className="card-image">
+                <Image className="card-image-image" sizes={node.frontmatter.icon.childImageSharp.sizes}/>
+              </div>
+              <div className="card-content">
+                <h3
+                  className="card__title"
+                  style={{
+                  marginBottom: rhythm(1 / 10),
+                }}
+                >
+                  {name}
+                </h3>
+                {/* TODO Q: convert to span and create type class to represent small tag */}
+                <span className="t-caption card__next-meeting">
+                  {node.frontmatter.next_meeting}
+                </span>
               </div>
             </Link>
           )
