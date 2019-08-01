@@ -47,31 +47,33 @@ class GroupPageTemplate extends React.Component {
               <a class="t-link group__link" href={group.frontmatter.group_url} target="_blank" rel="noopener noreferrer">Visit Group Website</a>
             </p>
           </div>
-        <ul
-          class="group__pagination"
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.frontmatter.slug} rel="prev">
-                ← {previous.frontmatter.name}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.frontmatter.slug} rel="next">
-                {next.frontmatter.name} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        <nav role="navigation" aria-label="Pagination">
+          <ul
+            class="group__pagination"
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.frontmatter.slug} rel="prev">
+                  ← {previous.frontmatter.name}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.frontmatter.slug} rel="next">
+                  {next.frontmatter.name} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
       </Layout>
     )
   }
