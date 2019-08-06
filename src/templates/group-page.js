@@ -48,14 +48,7 @@ class GroupPageTemplate extends React.Component {
             </p>
           </div>
         <ul
-          class="group__pagination"
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0
-          }}
+          class="group-pagination"
         >
           <li>
             {previous && (
