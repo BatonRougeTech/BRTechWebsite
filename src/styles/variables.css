@@ -37,6 +37,8 @@
   --global-gutter-small: 8px;
   --global-radius: 6px;
   --global-radius-small: 2px;
+  --global-spacing-half: calc(1.53rem / 2);
+  --global-spacing-normal: 1.53rem;
 
   /* GLOBAL TRANSITION */
   --global-transition: .2s ease;

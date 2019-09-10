@@ -8,3 +8,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.group-pagination {
+  margin-bottom: calc(var(--global-spacing-normal) + var(--global-spacing-half));
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* screen reader fix that accompanies list-style: none */
+  &:before {
+    content: "\200B";
+    position: absolute;
+  }
+}
