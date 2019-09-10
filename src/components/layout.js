@@ -62,7 +62,7 @@ class Layout extends React.Component {
         <main className="l-main">
           {children}
         </main>
-        <footer className="l-footer">
+        <footer role="contentinfo" className="l-footer">
           &copy; BatonRouge.tech {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
