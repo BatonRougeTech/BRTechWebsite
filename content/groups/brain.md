@@ -1,7 +1,7 @@
 ---
 slug: brain
 name: Analytics & Intelligence Network
-next-meeting: "2019-08-29T17:30:00.000Z"
+next-meeting: "2019-09-26T17:30:00.000Z"
 icon: ../assets/brain.png
 group_url: http://www.gobrain.org
 topics: [ tableau, powerbi, analytics, businessintelligence ]
