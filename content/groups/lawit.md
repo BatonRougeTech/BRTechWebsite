@@ -1,7 +1,7 @@
 ---
 slug: lawit
 name: Louisiana Women in Technology
-next-meeting: "2019-03-15T18:00:00.000Z"
+next-meeting: "2019-11-16T08:00:00.000Z"
 icon: ../assets/lawit.png
 group_url: http://www.la-wit.org/
 topics: [ tech, stem, education ]

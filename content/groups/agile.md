@@ -1,9 +1,9 @@
 ---
 slug: agile
 name: Geaux Agile
-next-meeting: "2019-08-16T11:30:00.000Z"
+next-meeting: "2019-10-18T11:30:00.000Z"
 icon: ../assets/agile.jpg
-group_url: http://www.geauxagile.com
+group_url: https://www.meetup.com/Geaux-Agile/
 topics: [ agile, scrum, SAFEe, lean ]
 frequency: monthly
 ---
