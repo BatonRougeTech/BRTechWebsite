@@ -1,7 +1,7 @@
 ---
 slug: AWS
 name: AWS Baton Rouge
-next-meeting: "2019-11-14T18:00:00.000Z"
+next-meeting: "2010-10-07T18:00:00.000Z"
 icon: ../assets/aws.jpeg
 group_url: https://www.meetup.com/AWS-Baton-Rouge/
 topics: [ cloud, aws ]
