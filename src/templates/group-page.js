@@ -65,14 +65,14 @@ class GroupPageTemplate extends React.Component {
           >
             <li>
               {previous && (
-                <Link to={previous.frontmatter.slug} rel="prev">
+                <Link to={`/${previous.frontmatter.slug.replace(/^\/+/, '')}`} rel="prev">
                   ← {previous.frontmatter.name}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.frontmatter.slug} rel="next">
+                <Link to={`/${next.frontmatter.slug.replace(/^\/+/, '')}`} rel="next">
                   {next.frontmatter.name} →
                 </Link>
               )}
