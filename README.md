@@ -29,7 +29,7 @@ This is the repository for the [BatonRouge.Tech](https://batonrouge.tech) websit
     name: SQL Server User Group
     next-meeting: "2019-07-10T17:45:00.000Z"
     icon: ../assets/brssug.png
-    group_url: http://www.brssug.org/
+    group_url: https://www.brssug.org/
     topics: [ mssql, microsoft, azure, businessintelligence ]
     frequency: monthly
     ---
