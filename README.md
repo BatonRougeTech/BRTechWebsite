@@ -2,6 +2,8 @@
 
 This is the repository for the [BatonRouge.Tech](https://batonrouge.tech) website. A website showcasing local user groups and events in the tech industry in the Baton Rouge area. We plan to expand to also showcase local freelancers soon, so if you have an idea on how to do that we'd welcome a Pull Request or an Issue to help guide us on that route. This site is a work in progress and we would love your help growing and maintaining it.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/86f5d790-b4a7-4cc8-b96f-ef0755cd3d66/deploy-status)](https://app.netlify.com/projects/batonrougetech/deploys)
+
 ## Getting Started
 
 1. **Install Gatsby CLI**
