@@ -1,8 +1,9 @@
 import React from "react"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 import { graphql, Link } from "gatsby";
 
@@ -20,7 +21,11 @@ class GroupPageTemplate extends React.Component {
         />
         <div className="group">
           <div className="group__image">
-            <Image sizes={group.frontmatter.icon.childImageSharp.sizes}/>
+            <GatsbyImage
+              image={getImage(group.frontmatter.icon)}
+              alt={`${group.frontmatter.name} logo`}
+              className="group__image"
+            />
           </div>
           <h1
             className="group__name"
@@ -98,9 +103,11 @@ export const pageQuery = graphql`
         group_url
         icon {
           childImageSharp {
-            sizes(maxWidth: 216) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(
+              width: 216
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
         topics

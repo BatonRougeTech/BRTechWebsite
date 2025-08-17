@@ -7,19 +7,22 @@ exports.createPages = ({ graphql, actions }) => {
   const groupPage = path.resolve(`src/templates/group-page.js`)
   return graphql(
     `
-      {
-        allMarkdownRemark(filter: {frontmatter: {name: {ne: null}}}, sort: {fields: frontmatter___next_meeting, order: DESC}) {
-          edges {
-            node {
-              frontmatter {
-                name
-                slug                
-                next_meeting(formatString: "MMMM DD, YYYY @ hh:mm a")
-              }
+    {
+      allMarkdownRemark(
+        filter: {frontmatter: {name: {ne: null}}}
+        sort: {frontmatter: {next_meeting: DESC}}
+      ) {
+        edges {
+          node {
+            frontmatter {
+              name
+              slug
+              next_meeting(formatString: "MMMM DD, YYYY @ hh:mm a")
             }
           }
         }
       }
+    }
     `
   ).then(result => {
     if (result.errors) {

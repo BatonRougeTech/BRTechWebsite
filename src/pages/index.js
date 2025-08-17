@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
@@ -26,10 +26,15 @@ class BlogIndex extends React.Component {
         <section className="cards">
         {userGroups.map(({ node }) => {
           const name = node.frontmatter.name
+          const imageData = getImage(node.frontmatter.icon)
           return (
             <Link to={node.frontmatter.slug}  key={node.frontmatter.slug} className="card">
               <div className="card-image">
-                <Image className="card-image-image" sizes={node.frontmatter.icon.childImageSharp.sizes}/>
+                <GatsbyImage
+                  image={imageData}
+                  alt={`${name} logo`}
+                  className="card-image-image"
+                />
               </div>
               <div className="card-content">
                 <h3
@@ -61,28 +66,30 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   {
-    site {
-      siteMetadata {
-        title
-      }
+  site {
+    siteMetadata {
+      title
     }
-    allMarkdownRemark(filter: {frontmatter: {name: {ne: null}}}, sort: {fields: frontmatter___next_meeting, order: DESC}) {
-      edges {
-        node {
-          frontmatter {
-            name
-            slug
-            icon {
-              childImageSharp {
-                sizes(maxWidth: 216) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
+  }
+  allMarkdownRemark(
+    filter: {frontmatter: {name: {ne: null}}}
+    sort: {frontmatter: {next_meeting: DESC}}
+  ) {
+    edges {
+      node {
+        frontmatter {
+          name
+          slug
+          icon {
+            childImageSharp {
+              gatsbyImageData(width: 216, 
+              placeholder: BLURRED, 
+              formats: [AUTO, WEBP, AVIF])
             }
-            next_meeting(formatString: "MMMM DD, YYYY @ hh:mm a")
           }
+          next_meeting(formatString: "MMMM DD, YYYY @ hh:mm a")
         }
       }
     }
   }
-`
+}`
