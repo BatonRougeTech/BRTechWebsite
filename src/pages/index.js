@@ -83,7 +83,7 @@ export const pageQuery = graphql`
           icon {
             childImageSharp {
               gatsbyImageData(width: 216, 
-              placeholder: BLURRED, 
+              placeholder: NONE, 
               formats: [AUTO, WEBP, AVIF])
             }
           }
